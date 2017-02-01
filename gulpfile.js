@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var gulpLoadPlugins = require('gulp-load-plugins');
 var plugins = gulpLoadPlugins();
+var sass = require('gulp-sass');
 const del = require('del');
 const browserSync = require('browser-sync');
 const runSequence = require('run-sequence');
@@ -13,6 +14,13 @@ gulp.task("clean", function(){
 
 	return del("build/");
 
+});
+
+gulp.task('sass', function () {
+    return gulp.src('./src/scss/*.scss')
+    	.pipe(plugins.plumber())
+        .pipe(sass())
+        .pipe(gulp.dest('./src/css/'));
 });
 
 gulp.task("autoprefixer", function(){
@@ -55,6 +63,7 @@ gulp.task("images", function(){
 
 gulp.task("watch", function(){
 
+	gulp.watch("src/scss/*.scss", ["sass"]);
 	gulp.watch("src/css/*.css", ["autoprefixer"]);
 	gulp.watch(["src/css/*.css", "src/index.html", "src/js/*.js"], browserSync.reload);
 
@@ -70,7 +79,7 @@ gulp.task("build:server", function(){
 
 gulp.task("build", function(){
 
-	runSequence("clean", "copy", "html", "images");
+	runSequence("clean", "sass", "copy", "autoprefixer", "html", "images");
 
 });
 

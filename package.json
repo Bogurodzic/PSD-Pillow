@@ -15,6 +15,8 @@
     "gulp-imagemin": "^3.1.1",
     "gulp-load-plugins": "^1.4.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^3.1.0",
     "gulp-sequence": "^0.4.6",
     "gulp-uglify": "^2.0.0",
     "gulp-useref": "^3.1.2",
