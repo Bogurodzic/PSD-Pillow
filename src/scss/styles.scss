@@ -85,6 +85,20 @@ header {
 	padding: 0 10px;
 	@extend %responsiveWidth;
 	@extend %box;
+
+	hr:nth-of-type(1) {
+		margin-top: 60px;
+	}
+
+	hr:nth-of-type(2) {
+		margin: 5px 0 0 0;
+	}
+
+	hr {
+		border: 0;
+	    height: 1px;
+	    background: rgb(210,210,210);
+	}
 }
 
 .header-name {
@@ -162,6 +176,7 @@ header {
 }
 
 .header-menu {
+	width: 100%;
 	margin-top: 10px;
 	float: right;
 
@@ -206,13 +221,12 @@ header {
 		&:hover {
 			cursor: pointer;
 
-			&&ul {
-				display: block;
-			}
+
 		}
 
 		@include small {
 			transform: scale(1, 1);
 		}
 	}
+
 }
