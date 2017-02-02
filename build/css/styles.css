@@ -1,12 +1,153 @@
-body {
-	display: flex;
-	width: 100%;
-	height: 500px;
-	background-color: blue;
-}
+.header-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
-.red {
-	width: 300px;
-	height: 300px;
-	background-color: green;
-}
+.header-name .header-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header-name, .header-name .header-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+
+.header-name .header-title {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+header, .header-name .header-title, .header-menu ul li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+header {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto; }
+
+header {
+  margin-top: 30px;
+  padding: 0 10px; }
+
+.header-name {
+  width: 290px; }
+  .header-name .header-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #363636;
+    color: white;
+    font-family: Raleway-Bold;
+    font-size: 40px; }
+    .header-name .header-icon .triangle {
+      position: absolute;
+      left: 80%;
+      top: 80%;
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      -moz-transform: scale(0.9999);
+      border-width: 0 0 10px 10px;
+      border-color: transparent transparent red transparent; }
+  .header-name .header-title {
+    width: 240px;
+    height: 50px;
+    padding-left: 10px; }
+    .header-name .header-title h2 {
+      font-family: Raleway-Bold;
+      color: #282828;
+      font-size: 21px;
+      width: 100%;
+      text-transform: uppercase; }
+    .header-name .header-title p {
+      font-family: RobotoSlab-Regular;
+      font-size: 12px;
+      color: #7c7c7c;
+      width: 100%; }
+
+.header-description {
+  font-family: RobotoSlab-Regular;
+  font-size: 24px;
+  text-align: justify;
+  max-width: 780px;
+  padding-top: 20px;
+  color: #3c3c3c;
+  font-size: 15px;
+  line-height: 16.8px; }
+  @media (min-width: 576px) {
+    .header-description {
+      font-size: 20px;
+      line-height: 22.4px; } }
+  @media (min-width: 768px) {
+    .header-description {
+      padding-top: 45px;
+      font-size: 24px;
+      line-height: 37.8px; } }
+
+.header-menu {
+  margin-top: 10px;
+  float: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header-menu ul {
+    display: none;
+    list-style-type: none; }
+    .header-menu ul li {
+      font-size: 10px;
+      font-family: RobotoSlab-Regular;
+      color: black;
+      float: right;
+      padding: 10px 5px; }
+      @media (min-width: 576px) {
+        .header-menu ul li {
+          padding: 10px 10px;
+          font-size: 12px; } }
+      @media (min-width: 768px) {
+        .header-menu ul li {
+          padding: 10px 22.5px;
+          font-size: 14px; } }
+      .header-menu ul li:hover {
+        cursor: pointer;
+        opacity: 0.6; }
+  .header-menu .fa-bars {
+    font-size: 18px;
+    padding: 12px;
+    background-color: black;
+    -webkit-transform: scale(0.75, 0.75);
+        -ms-transform: scale(0.75, 0.75);
+            transform: scale(0.75, 0.75); }
+    .header-menu .fa-bars:hover {
+      cursor: pointer; }
+    @media (min-width: 576px) {
+      .header-menu .fa-bars {
+        -webkit-transform: scale(1, 1);
+            -ms-transform: scale(1, 1);
+                transform: scale(1, 1); } }
