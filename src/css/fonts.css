@@ -8,4 +8,8 @@
     src: url(../fonts/RobotoSlab-Regular.ttf);
 }
 
+@font-face {
+    font-family: RobotoSlab-Bold;
+    src: url(../fonts/RobotoSlab-Bold.ttf);	
+}
 

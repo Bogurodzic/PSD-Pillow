@@ -1,5 +1,6 @@
 $rBold: Raleway-Bold;
 $sRegular: RobotoSlab-Regular;
+$sBold: RobotoSlab-Bold;
 $triangle: 10px;
 $fontColor: rgb(40,40,40);
 $grey: rgb(124,124,124);
@@ -87,6 +88,36 @@ $slider: 1240px;
     -moz-transform: scale(.9999);
     border-width: 0 0 $sizeH $sizeV;
     border-color: transparent transparent $color transparent;
+}
+
+
+
+
+/////// GENERAL ///////
+a {
+
+	text-decoration: none;
+
+	.button {
+		width: 180px;
+		height: 50px;
+		//color: darken($grey, 40%);
+		color: white;
+		border: 1px solid $grey;
+		font-family: $sRegular;
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+
+		background-color: rgba(0,0,0,0.75);
+
+		@include small {
+			background-color: rgba(0,0,0,0);
+			color: darken($grey, 40%);
+		}
+
+		@extend %flex-center-item;
+	}	
 }
 
 
@@ -200,9 +231,13 @@ header {
 		display:none;
 		list-style-type: none;
 		li {
+
+			a {
+				color: darken($fontColor, 20%);
+			}
+
 			font-size: 10px;
 			font-family: $sRegular;
-			color: darken($fontColor, 20%);
 			float: right;
 			padding: 10px 5px;
 			@extend %box;
@@ -253,6 +288,60 @@ header {
 	margin-bottom: 40px;
 	@extend %responsiveWidth;
 	@extend %box;
+
+	ul {
+		li {
+			position: relative;
+
+			.slider-content {
+				position: absolute;
+				top: 25%;
+				right: 15%;
+
+				@include small {
+					top: 35%;
+				}
+				@include medium {
+					top: 47.5%;
+				}
+
+				@include large {
+					top: 57%;
+					right: 15%;
+				} 
+
+				h2 {
+					font-family: $sRegular;
+					font-size: 10px;
+					text-transform: uppercase;
+					letter-spacing: 2.1px;
+
+					@include large {
+						font-size: 12px;
+					}
+				}
+
+				h4 {
+					font-family: $rBold;
+					text-transform: uppercase;
+					font-size: 20px;
+
+
+					@extend %box;
+
+					@include medium {
+						font-size: 26px;
+						padding: 7.5px 0 12.5px 0;						
+					}
+
+					@include large {
+						font-size: 34px;
+						padding: 15px 0 25px 0;
+					}					
+				}
+			}
+		}
+	}
 
 	#slider-next {
 		position: absolute;

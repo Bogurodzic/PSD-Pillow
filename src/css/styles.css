@@ -1,7 +1,7 @@
 .header-menu {
   display: flex; }
 
-.header-name .header-icon {
+a .button, .header-name .header-icon {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -14,13 +14,30 @@
 .header-name .header-title {
   flex-wrap: wrap; }
 
-header, .header-name .header-title, .header-menu ul li, .main-slider {
+header, .header-name .header-title, .header-menu ul li, .main-slider, .main-slider ul li .slider-content h4 {
   box-sizing: border-box; }
 
 header, .main-slider {
   width: 100%;
   max-width: 1180px;
   margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+  a .button {
+    width: 180px;
+    height: 50px;
+    color: white;
+    border: 1px solid #7c7c7c;
+    font-family: RobotoSlab-Regular;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.75); }
+    @media (min-width: 576px) {
+      a .button {
+        background-color: transparent;
+        color: #161616; } }
 
 header {
   padding: 0 10px;
@@ -104,9 +121,10 @@ header {
     .header-menu ul li {
       font-size: 10px;
       font-family: RobotoSlab-Regular;
-      color: black;
       float: right;
       padding: 10px 5px; }
+      .header-menu ul li a {
+        color: black; }
       @media (min-width: 576px) {
         .header-menu ul li {
           padding: 10px 10px;
@@ -133,6 +151,42 @@ header {
   position: relative;
   padding: 0 10px;
   margin-bottom: 40px; }
+  .main-slider ul li {
+    position: relative; }
+    .main-slider ul li .slider-content {
+      position: absolute;
+      top: 25%;
+      right: 15%; }
+      @media (min-width: 576px) {
+        .main-slider ul li .slider-content {
+          top: 35%; } }
+      @media (min-width: 768px) {
+        .main-slider ul li .slider-content {
+          top: 47.5%; } }
+      @media (min-width: 992px) {
+        .main-slider ul li .slider-content {
+          top: 57%;
+          right: 15%; } }
+      .main-slider ul li .slider-content h2 {
+        font-family: RobotoSlab-Regular;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2.1px; }
+        @media (min-width: 992px) {
+          .main-slider ul li .slider-content h2 {
+            font-size: 12px; } }
+      .main-slider ul li .slider-content h4 {
+        font-family: Raleway-Bold;
+        text-transform: uppercase;
+        font-size: 20px; }
+        @media (min-width: 768px) {
+          .main-slider ul li .slider-content h4 {
+            font-size: 26px;
+            padding: 7.5px 0 12.5px 0; } }
+        @media (min-width: 992px) {
+          .main-slider ul li .slider-content h4 {
+            font-size: 34px;
+            padding: 15px 0 25px 0; } }
   .main-slider #slider-next {
     position: absolute;
     top: 50%;
