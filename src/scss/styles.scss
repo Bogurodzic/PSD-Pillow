@@ -11,6 +11,7 @@ $small: 576px;
 $medium: 768px;
 $large: 992px;
 $extralarge: 1200px;
+$slider: 1240px;
 
 @mixin small {
   @media (min-width: $small) {
@@ -35,6 +36,16 @@ $extralarge: 1200px;
     @content;
   }
 }
+
+@mixin slider {
+  @media (min-width: $slider) {
+    @content;
+  }
+}
+
+@mixin calc($property, $expression) { 
+  #{$property}: calc(#{$expression}); 
+} 
 
 
 %flex {
@@ -81,10 +92,11 @@ $extralarge: 1200px;
 
 ///////// HEADER /////////
 header {
-	margin-top: 30px;
 	padding: 0 10px;
 	@extend %responsiveWidth;
 	@extend %box;
+	margin-top: 30px;
+	margin-bottom: 40px;
 
 	hr:nth-of-type(1) {
 		margin-top: 60px;
@@ -230,3 +242,57 @@ header {
 	}
 
 }
+
+
+///////// SLIDER ////////////
+
+.main-slider {
+
+	position: relative;
+	padding: 0 10px;
+	margin-bottom: 40px;
+	@extend %responsiveWidth;
+	@extend %box;
+
+	#slider-next {
+		position: absolute;
+		top: 50%;
+		right: 5%;
+
+		@include small {
+			right: 5%;
+		}
+
+		@include large {
+			right: 2.5%;
+		}
+
+		@include slider {
+			right: -1.5%;
+		}
+
+	}
+
+	#slider-prev {
+		position: absolute;
+		top: 50%;
+		left: 5%;
+
+		@include small {
+			left: 5%;
+		}
+
+		@include large {
+			left: 2.5%;
+		}
+
+		@include slider {
+			left: -1.5%;
+		}
+
+	}
+
+}
+
+
+
