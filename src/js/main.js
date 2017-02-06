@@ -7,14 +7,17 @@ $(document).ready(function(){
 
 //Slider 
 
-	  $('.bxslider').bxSlider({
-	  	  nextSelector: '#slider-next',
-		  prevSelector: '#slider-prev',
-		  nextText: "<img src='img/arrow-right.png'>",
-		  prevText: "<img src='img/arrow-left.png'>",
-		  pager: false
+	 $('.bxslider').bxSlider({
+	    nextSelector: '#slider-next',
+	 	prevSelector: '#slider-prev',
+	  	nextText: "<img src='img/arrow-right.png'>",
+	 	prevText: "<img src='img/arrow-left.png'>",
+		pager: false
 	  });
 
 
 
+	$(".fa-plus").click(function() {
+	  	$( "form" ).submit();
+	});
 });
