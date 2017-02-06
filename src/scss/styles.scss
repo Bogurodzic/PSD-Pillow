@@ -384,4 +384,125 @@ header {
 }
 
 
+/////// FEATURED COLLECTIONS ////////
+
+.collections {
+
+	padding: 0 10px;
+	@extend %responsiveWidth;
+	@extend %box;
+
+	.collections-title {
+		margin-bottom: 40px;
+		justify-content: space-between;
+		@extend %flex;
+
+		a {
+			font-family: $sRegular;
+			font-size: 12px;
+			color: $grey;
+			font-style: italic;
+			text-decoration: underline;
+		}
+
+		h2 {
+			font-family: $sBold;
+			font-size: 18px;	
+			color: rgb(54,54,54);		
+		}
+	}
+
+	.collections-gallery {
+
+		@extend %flex-center-items;
+		@extend %flex-wrap;
+
+		@include small {
+			flex-wrap: nowrap;
+		}
+
+
+
+		.gallery1 {
+			width: 70%;
+
+			@include medium {
+				padding-right: 12.5px;
+				width: 100%;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.gallery2 {
+			width: 70%;
+
+			@include medium {
+				padding-left: 12.5px;
+				width: 100%;
+			}
+
+			.gallery2-1 {
+				width: 100%;
+
+				@include medium {
+					padding-bottom: 5px;
+				}
+
+				img {
+					width: 100%;
+				}
+			}
+
+			.gallery2-2 {
+				width: 100%;
+
+				@include small {
+					display: flex;
+				}
+				
+				@include medium {
+					padding-top: 5px;
+				}
+
+				.gallery2-2-1 {
+					width: 100%;
+					height: auto;
+
+					@include small {
+						width: 50%;
+					}
+
+					@include medium {
+						padding-right: 10px;
+					}
+
+					img {
+						width: 100%;
+					}					
+				}
+
+				.gallery2-2-2 {
+					width: 100%;
+					height: auto;
+
+					@include small {
+						width: 50%;
+					}
+
+					@include medium {
+						padding-left: 10px;
+					}
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+
 

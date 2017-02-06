@@ -1,4 +1,4 @@
-.header-menu {
+.header-menu, .collections .collections-title {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18,7 +18,7 @@ a .button, .header-name .header-icon {
       -ms-flex-align: center;
           align-items: center; }
 
-.header-name, .header-name .header-title {
+.header-name, .header-name .header-title, .collections .collections-gallery {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -31,16 +31,16 @@ a .button, .header-name .header-icon {
       -ms-flex-line-pack: center;
           align-content: center; }
 
-.header-name .header-title {
+.header-name .header-title, .collections .collections-gallery {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
-header, .header-name .header-title, .header-menu ul li, .main-slider, .main-slider ul li .slider-content h4 {
+header, .header-name .header-title, .header-menu ul li, .main-slider, .main-slider ul li .slider-content h4, .collections {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-header, .main-slider {
+header, .main-slider, .collections {
   width: 100%;
   max-width: 1180px;
   margin: 0 auto; }
@@ -246,3 +246,81 @@ header {
     @media (min-width: 1240px) {
       .main-slider #slider-prev {
         left: -1.5%; } }
+
+.collections {
+  padding: 0 10px; }
+  .collections .collections-title {
+    margin-bottom: 40px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .collections .collections-title a {
+      font-family: RobotoSlab-Regular;
+      font-size: 12px;
+      color: #7c7c7c;
+      font-style: italic;
+      text-decoration: underline; }
+    .collections .collections-title h2 {
+      font-family: RobotoSlab-Bold;
+      font-size: 18px;
+      color: #363636; }
+  @media (min-width: 576px) {
+    .collections .collections-gallery {
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap; } }
+  .collections .collections-gallery .gallery1 {
+    width: 70%; }
+    @media (min-width: 768px) {
+      .collections .collections-gallery .gallery1 {
+        padding-right: 12.5px;
+        width: 100%; } }
+    .collections .collections-gallery .gallery1 img {
+      width: 100%; }
+  .collections .collections-gallery .gallery2 {
+    width: 70%; }
+    @media (min-width: 768px) {
+      .collections .collections-gallery .gallery2 {
+        padding-left: 12.5px;
+        width: 100%; } }
+    .collections .collections-gallery .gallery2 .gallery2-1 {
+      width: 100%; }
+      @media (min-width: 768px) {
+        .collections .collections-gallery .gallery2 .gallery2-1 {
+          padding-bottom: 5px; } }
+      .collections .collections-gallery .gallery2 .gallery2-1 img {
+        width: 100%; }
+    .collections .collections-gallery .gallery2 .gallery2-2 {
+      width: 100%; }
+      @media (min-width: 576px) {
+        .collections .collections-gallery .gallery2 .gallery2-2 {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; } }
+      @media (min-width: 768px) {
+        .collections .collections-gallery .gallery2 .gallery2-2 {
+          padding-top: 5px; } }
+      .collections .collections-gallery .gallery2 .gallery2-2 .gallery2-2-1 {
+        width: 100%;
+        height: auto; }
+        @media (min-width: 576px) {
+          .collections .collections-gallery .gallery2 .gallery2-2 .gallery2-2-1 {
+            width: 50%; } }
+        @media (min-width: 768px) {
+          .collections .collections-gallery .gallery2 .gallery2-2 .gallery2-2-1 {
+            padding-right: 10px; } }
+        .collections .collections-gallery .gallery2 .gallery2-2 .gallery2-2-1 img {
+          width: 100%; }
+      .collections .collections-gallery .gallery2 .gallery2-2 .gallery2-2-2 {
+        width: 100%;
+        height: auto; }
+        @media (min-width: 576px) {
+          .collections .collections-gallery .gallery2 .gallery2-2 .gallery2-2-2 {
+            width: 50%; } }
+        @media (min-width: 768px) {
+          .collections .collections-gallery .gallery2 .gallery2-2 .gallery2-2-2 {
+            padding-left: 10px; } }
+        .collections .collections-gallery .gallery2 .gallery2-2 .gallery2-2-2 img {
+          width: 100%; }
