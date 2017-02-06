@@ -30,8 +30,18 @@ $(document).ready(function(){
 	});
 
 	$(".fa-star").mouseout(function(){
-		$(this).prevAll().css("color", "");
-		$(this).css("color", "");
+		
+		if($(this).parent().hasClass("toggled")){
+			return
+		} else {
+			$(this).prevAll().css("color", "");
+			$(this).css("color", "");			
+		}
+
+	});
+
+	$(".fa-star").on("click", function(){
+		$(this).parent().toggleClass("toggled");
 	});
 
 });
