@@ -616,3 +616,71 @@ header {
 		}
 
 }
+
+
+////////// POPULAR PRODUCTS ////////
+
+.popular-products {
+
+	text-align: center;
+
+	@extend %responsiveWidth;
+
+	.products-title {
+		h2 {
+			font-family: $sBold;
+			font-size: 18px;
+			color: darken($grey, 22%);
+			text-transform: uppercase;
+			margin: 50px 0 15px 0;
+		}	
+
+		p {
+			font-size: 12px;
+			font-family: $sRegular;
+			color: $grey;
+			margin-bottom: 60px;
+		}
+	}
+
+}
+
+
+.products-list {
+
+	.product-item {
+		width: 75%;
+		max-width: 280px;
+
+		img {
+			width: 100%;
+		}
+
+		.product-name {
+			margin-top: 25px;
+
+			@extend %flex;
+			justify-content: space-between;
+
+			p {
+				font-size: 14px;
+				font-family: $sBold;
+				color: darkeen($grey, 30%);
+			}
+
+			i {
+				font-size: 12px;
+				//color: #fbaf5d;
+				color: #b0b0b0;
+			}
+		}
+
+		.product-price {
+			font-family: $sRegular;
+			font-size: 14px;
+			color: darkeen($grey, 25%);
+			text-align: left;
+			margin-top: 10px;
+		}
+	}
+}

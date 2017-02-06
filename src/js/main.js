@@ -16,8 +16,22 @@ $(document).ready(function(){
 	  });
 
 
+//Form
 
 	$(".fa-plus").click(function() {
 	  	$( "form" ).submit();
 	});
+
+//Stars	
+
+	$(".fa-star").mouseenter(function(){
+		$(this).prevAll().css("color", "#fbaf5d");
+		$(this).css("color", "#fbaf5d");
+	});
+
+	$(".fa-star").mouseout(function(){
+		$(this).prevAll().css("color", "");
+		$(this).css("color", "");
+	});
+
 });
