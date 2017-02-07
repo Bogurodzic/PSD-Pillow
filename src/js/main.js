@@ -15,6 +15,18 @@ $(document).ready(function(){
 		pager: false
 	  });
 
+	 $('.bxslider1').bxSlider({
+	    nextSelector: '#slider-next-blog',
+	 	prevSelector: '#slider-prev-blog',
+	  	nextText: "<img src='img/arrow-right.png'>",
+	 	prevText: "<img src='img/arrow-left.png'>",	 
+	    pagerCustom: '#bx-pager'	
+	 });
+
+	 $(".diamonds").on("click", function(){
+	 	$(".diamonds").css("color", "black");
+	 	$(this).css("color", "red");
+	 });
 
 //Form
 
@@ -23,25 +35,37 @@ $(document).ready(function(){
 	});
 
 //Stars	
-
-	$(".fa-star").mouseenter(function(){
-		$(this).prevAll().css("color", "#fbaf5d");
-		$(this).css("color", "#fbaf5d");
+/*
+	$(".fa-star::before").on("click", function(){
+		clearStars($(this));
+		yellowStar($(this));
 	});
 
-	$(".fa-star").mouseout(function(){
-		
-		if($(this).parent().hasClass("toggled")){
-			return
-		} else {
-			$(this).prevAll().css("color", "");
-			$(this).css("color", "");			
-		}
+	$(".fa-star").hover(function(){
 
-	});
+	})
 
-	$(".fa-star").on("click", function(){
-		$(this).parent().toggleClass("toggled");
+
+function yellowStar(star){
+	$(star).prevAll().css({
+		"color": "#fbaf5d"
 	});
+	$(star).css({
+		"color": "#fbaf5d"
+	});
+}
+
+function clearStars(star){
+	$(star).prevAll().css({
+		"color": "#b0b0b0"
+	});
+	$(star).css({
+		"color": "#b0b0b0"
+	});	
+	$(star).nextAll().css({
+		"color": "#b0b0b0"
+	});
+}*/
 
 });
+

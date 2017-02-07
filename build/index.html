@@ -9,9 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ 
 	<title>Pillow</title>
 </head>
 <body>
@@ -28,12 +28,12 @@
 		</div>
 		<div class="header-menu">	
 			<ul>
-				<a href="#"><li>Contact</li></a>
-				<a href="#"><li>Shop</li></a>
-				<a href="#"><li>Shortcode</li></a>
-				<a href="#"><li>Pages</li></a>
-				<a href="#"><li>Blog</li></a>
-				<a href="#"><li>Home</li></a>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Shortcode</a></li>
+				<li><a href="#">Pages</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Home</a></li>
 			</ul>
 			<i class="fa fa-bars fa-inverse" aria-hidden="true"></i>
 		</div>
@@ -41,27 +41,205 @@
 		<hr/>
 	</header>
 	<div class="main-slider">
-
 		<ul class="bxslider">
 			<li>
-				<img src="img/slider1.jpg" />
+				<img src="img/slider1.jpg" alt="photo of new collection"/>
+				<div class="slider-content">
+					<h2>Women's dresses</h2>
+					<h4>Embroidered tunic</h4>
+					<a href=""><div class="button">view collection</div></a>
+				</div>
 			</li>
 			<li>
-				<img src="img/slider1.jpg" />
+				<img src="img/slider1.jpg" alt="photo of new collection"/>
+				<div class="slider-content">
+					<h2>Women's dresses</h2>
+					<h4>Embroidered tunic</h4>
+					<a href=""><div class="button">view collection</div></a>
+				</div>				
 			</li>
 			<li>
-				<img src="img/slider1.jpg" />
+				<img src="img/slider1.jpg" alt="photo of new collection"/>
+				<div class="slider-content">
+					<h2>Women's dresses</h2>
+					<h4>Embroidered tunic</h4>
+					<a href=""><div class="button">view collection</div></a>
+				</div>				
 			</li>
 			<li>
-				<img src="img/slider1.jpg" />
+				<img src="img/slider1.jpg" alt="photo of new collection"/>
+				<div class="slider-content">
+					<h2>Women's dresses</h2>
+					<h4>Embroidered tunic</h4>
+					<a href=""><div class="button">view collection</div></a>
+				</div>				
 			</li>
 		</ul>
 		
 		<span id="slider-next"></span><span id="slider-prev"></span>
-
 	</div>
+	<section class="collections">
+		<div class="collections-title">
+			<h2>Featured Collections</h2>
+			<a href="">View All</a>
+		</div>
+		<div class="collections-gallery">
+			<div class="gallery-item gallery1">
+				<img src="img/gallery-jacket.jpg" alt="jacket from new collection">
+				<div class="gallery-item-description">
+					<h4>Man's jacket</h4>
+					<a href="">View Collection <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="gallery2">
+				<div class="gallery-item gallery2-1">
+					<img src="img/gallery-shoes.jpg" alt="shoes from new collection">
+					<div class="gallery-item-description">
+						<h4>Women's shoes</h4>
+						<a href="">View Collection <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>					
+				</div>	
+				<div class="gallery2-2">
+					<div class="gallery-item gallery2-2-1">
+						<img src="img/gallery-backpack.jpg" alt="backpack from new collection">
+						<div class="gallery-item-description">
+							<h4>Backpack</h4>
+							<a href="">View Collection <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+						</div>						
+					</div>
+					<div class="gallery-item gallery2-2-2">
+						<img src="img/gallery-glasses.jpg" alt="glasses from new collection">
+						<div class="gallery-item-description">
+							<h4>Glasses</h4>
+							<a href="">View Collection <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+						</div>						
+					</div>
+				</div>											
+			</div>
+		</div>
+		<div class="subscribe">
+			<h4>subscribe our newstler</h4>
+			<p>Duis eget malesuada metus. Donec fringilla suscipit efficitur. Suspendisse sit amet fringilla leo</p>
+			<form>
+				<input type="email" placeholder="Email Address" name="mail"><i class="fa fa-plus" aria-hidden="true"></i>
+			</form>
+		</div>	
+		<hr/>
+		<hr/>
+	</section>
+	<section class="popular-products">
+		<div class="products-title">
+			<h2>Popular Products</h2>
+			<p>Duis eget malesuada metus. Donec fringilla suscipit efficitur.</p>
+		</div>
+		<div class="products-list">
+			<div class="product-item">
+				<div class="product-image">
+					<img src="img/product1.jpg" alt="check t-shirt">
+					<div class="product-menu">
+					<a href=""><div class="button">add to cart</div></a>
+					<a href=""><div class="button">quick view</div></a>
+					<a href=""><div class="button">show details</div></a>
+					</div>
+				</div>
+				<div class="product-name">
+					<p>Check T-shirt</p>
+					<div class="product-rating">
+						<i class="icon yellow fa fa-star" aria-hidden="true"></i>
+						<i class="icon yellow fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+				</div>
+				<p class="product-price">$30.00</p>
+			</div>
+			<div class="product-item">
+				<div class="product-image">
+					<img src="img/product2.jpg" alt="sleeveless t-shirt">
+					<div class="product-menu">
+					<a href=""><div class="button">add to cart</div></a>
+					<a href=""><div class="button">quick view</div></a>
+					<a href=""><div class="button">show details</div></a>
+					</div>
+				</div>
+				<div class="product-name">
+					<p>Sleeveless T-shirt</p>
+					<div class="product-rating">
+						<i class="yellow fa fa-star" aria-hidden="true"></i>
+						<i class="yellow fa fa-star" aria-hidden="true"></i>
+						<i class="yellow fa fa-star" aria-hidden="true"></i>
+						<i class="yellow fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+				</div>
+				<p class="product-price"><span class="old-price">$40.00</span> $25.00</p>
+			</div>	
+			<div class="product-item">
+				<div class="product-image">
+					<img src="img/product3.jpg" alt="button tab t-shirt">
+					<div class="product-menu">
+					<a href=""><div class="button">add to cart</div></a>
+					<a href=""><div class="button">quick view</div></a>
+					<a href=""><div class="button">show details</div></a>
+					</div>
+				</div>
+				<div class="product-name">
+					<p>Button Tab T-shirt</p>
+					<div class="product-rating">
+						<i class="yellow fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+				</div>
+				<p class="product-price">$29.99</p>
+			</div>	
+			<div class="product-item">
+				<div class="product-image">
+					<img src="img/product4.jpg" alt="printed polo t-shirt">
+					<div class="product-menu">
+					<a href=""><div class="button">add to cart</div></a>
+					<a href=""><div class="button">quick view</div></a>
+					<a href=""><div class="button">show details</div></a>
+					</div>
+				</div>
+				<div class="product-name">
+					<p>Printed Polo T-shirt</p>
+					<div class="product-rating">
+						<i class="yellow fa fa-star" aria-hidden="true"></i>
+						<i class="yellow fa fa-star" aria-hidden="true"></i>
+						<i class="yellow fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+				</div>
+				<p class="product-price">$30.00</p>
+			</div>		
+		</div>
+		<hr/>
+		<hr/>
+	</section>
+	<section class="blog">
+		<h4>More entries from blogs</h4>
+		<div class="blog-entries">
+			<div class="entry entry-left">
+				<h6>Need a WordPress Theme Review Service? Check out ThemeReview.co!</h6>
+				<hr align="right">
+				<p>Post by <span class="bold">k3nnyart</span>    /    12.5.2015    /    WordPress Product Reviews</p>
+			</div>
+			<div class="entry entry-right">
+				<h6>Need a WordPress Theme Review Service? Check out ThemeReview.co!</h6>
+				<hr align="left">
+				<p>Post by <span class="bold">k3nnyart</span>    /    12.5.2015    /    WordPress Product Reviews</p>
+			</div>
+		</div>
+	</section>
+
+
 	<script src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>
 </html>
