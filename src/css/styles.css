@@ -6,7 +6,7 @@ a .button, .header-name .header-icon, .blog-slider #bx-pager ul {
   justify-content: center;
   align-items: center; }
 
-.header-name, .header-name .header-title, .collections .collections-gallery, .products-list, .product-image .product-menu {
+.header-name, .header-name .header-title, .collections .collections-gallery, .products-list, .product-image .product-menu, footer, footer .social-icons {
   display: flex;
   justify-content: center;
   align-content: center; }
@@ -14,10 +14,10 @@ a .button, .header-name .header-icon, .blog-slider #bx-pager ul {
 .header-name .header-title, .collections .collections-gallery, .products-list, .product-image .product-menu {
   flex-wrap: wrap; }
 
-header, .header-name .header-title, .header-menu ul li, .main-slider, .main-slider ul li .slider-content h4, .collections, .subscribe form input, .popular-products, .blog, .blog .blog-entries .entry {
+header, .header-name .header-title, .header-menu ul li, .main-slider, .main-slider ul li .slider-content h4, .collections, .subscribe form input, .popular-products, .blog, .blog .blog-entries .entry, footer {
   box-sizing: border-box; }
 
-header, .main-slider, .collections, .subscribe, .popular-products, .blog, .blog > hr {
+header, .main-slider, .collections, .subscribe, .popular-products, .blog, .blog > hr, footer {
   width: 100%;
   max-width: 1180px;
   margin: 0 auto; }
@@ -508,8 +508,13 @@ header {
         .blog .blog-entries .entry-left {
           padding-right: 40px; } }
       .blog .blog-entries .entry-left .line {
-        width: 100%; }
+        width: 100%;
+        height: 10px;
+        position: relative; }
         .blog .blog-entries .entry-left .line hr {
+          position: absolute;
+          right: 0;
+          top: -2px;
           width: 40px;
           border: 0;
           height: 1px;
@@ -524,8 +529,13 @@ header {
           padding-left: 40px;
           border-left: 1px dotted #7c7c7c; } }
       .blog .blog-entries .entry-right .line {
-        width: 100%; }
+        width: 100%;
+        height: 10px;
+        position: relative; }
         .blog .blog-entries .entry-right .line hr {
+          position: absolute;
+          left: 0;
+          top: -2px;
           width: 40px;
           border: 0;
           height: 1px;
@@ -567,3 +577,25 @@ header {
   border: 0;
   height: 1px;
   background: #d2d2d2; }
+
+footer {
+  padding: 0 10px;
+  height: 185px;
+  flex-wrap: wrap; }
+  footer .social-icons {
+    width: 100%;
+    margin-bottom: 25px; }
+    footer .social-icons i {
+      color: #7c7c7c;
+      font-size: 16px;
+      padding: 0 10px; }
+      footer .social-icons i:hover {
+        color: black;
+        cursor: pointer; }
+  footer p {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: RobotoSlab-Regular; }
+  footer p:nth-of-type(1) {
+    margin-bottom: 12px; }
