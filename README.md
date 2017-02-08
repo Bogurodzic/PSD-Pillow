@@ -1,6 +1,6 @@
 # PSD - Portfolio
 
-Live version: [[link]](https://github.com/Bogurodzic/PSD-Pillow)
+Live version: [[link]](http://www.kamiljarzab.pl/Projekty/PSD-Pillow/)
 
 ##Technologies I have used:
 * Html5
