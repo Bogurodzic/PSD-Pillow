@@ -273,6 +273,8 @@ header {
               flex-wrap: nowrap; } }
   .collections .collections-gallery .gallery-item {
     position: relative; }
+    .collections .collections-gallery .gallery-item:hover {
+      opacity: 0.9; }
     .collections .collections-gallery .gallery-item .gallery-item-description {
       position: absolute;
       top: 40px;
@@ -639,6 +641,8 @@ header {
       margin: 0 2px;
       color: black;
       font-size: 22px; }
+    .blog-slider #bx-pager ul li a.active {
+      color: red; }
 
 .blog > hr:nth-of-type(1) {
   margin-top: 60px; }

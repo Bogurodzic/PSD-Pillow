@@ -5,6 +5,8 @@ $(document).ready(function(){
 	});
 
 
+
+
 //Slider 
 
 	 $('.bxslider').bxSlider({
@@ -15,7 +17,7 @@ $(document).ready(function(){
 		pager: false
 	  });
 
-	 $('.bxslider1').bxSlider({
+	 var slider = $('.bxslider1').bxSlider({
 	    nextSelector: '#slider-next-blog',
 	 	prevSelector: '#slider-prev-blog',
 	  	nextText: "<img src='img/arrow-right.png'>",
@@ -23,16 +25,26 @@ $(document).ready(function(){
 	    pagerCustom: '#bx-pager'	
 	 });
 
-	 $(".diamonds").on("click", function(){
-	 	$(".diamonds").css("color", "black");
-	 	$(this).css("color", "red");
-	 });
+	 $('a.pager-prev').click(function () {
+	    var current = slider.getCurrentSlide();
+	    slider.goToPrevSlide(current) - 1;
+	});
+
+	$('a.pager-next').click(function () {
+	    var current = slider.getCurrentSlide();
+	    slider.goToNextSlide(current) + 1;
+	});
+
+	 //$(".diamonds").on("click", function(){
+	 //	$(".diamonds").css("color", "black");
+	 //	$(this).css("color", "red");
+	 //});
 
 //Form
 
 	$(".fa-plus").click(function() {
 	  	$( "form" ).submit();
-	});
+	});  
 
 //Stars	
 /*

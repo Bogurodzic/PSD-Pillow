@@ -425,6 +425,10 @@ header {
 		.gallery-item {
 			position: relative;
 
+			&:hover {
+				opacity: 0.9;
+			}
+
 			.gallery-item-description {
 				position: absolute;
 				top: 40px;
@@ -957,6 +961,10 @@ header {
 					margin: 0 2px;
 					color: black;
 					font-size: 22px;
+				}
+
+				a.active {
+					color: red;
 				}
 			}		
 		}
